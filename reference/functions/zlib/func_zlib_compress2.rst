@@ -29,11 +29,11 @@ ensure that this value be at least ``(source_len * 1.001) + 12``. On successful 
 Parameters
 ==========
 
-* ``dest``:``Byte Ptr`` - The destination buffer.
-* ``dest_len``:``UInt Var`` - The size of the destination buffer. On exit, will hold the actual size of the compressed data.
-* ``source``:``Byte Ptr`` - The source buffer.
-* ``source_len``:``UInt`` - The size of the source data.
-* ``level``:``Int`` - The required compression level, 0 to 9, where 0 is none, 9 is maximum.
+* ``dest`` - The destination buffer.
+* ``dest_len`` - The size of the destination buffer. On exit, will hold the actual size of the compressed data.
+* ``source`` - The source buffer.
+* ``source_len`` - The size of the source data.
+* ``level`` - The required compression level, 0 to 9, where 0 is none, 9 is maximum.
 
 
 
