@@ -4,7 +4,7 @@
 MemFree
 =======
 
-MemFree - 
+MemFree - Free allocated memory
 
 Description
 ===========
@@ -13,11 +13,13 @@ Description
 
     MemFree( mem:Byte Ptr )
 
-Free allocated memory
-The memory specified by @mem must have been previously allocated by #MemAlloc or #MemExtend.
+A block of memory specified by ``mem``, having been previously allocated by :ref:`func_system_memalloc` or
+:ref:`func_system_memextend` is freed, making it available for further allocations.
 
 Parameters
 ==========
+
+* ``mem`` - A pointer to an allocated memory block.
 
 Return Values
 =============
@@ -30,5 +32,4 @@ Examples
 See Also
 ========
 
-
-
+:ref:`func_system_memalloc`, :ref:`func_system_memextend`, :ref:`func_system_memcopy`, :ref:`func_system_memmove`, :ref:`func_system_memclear`
